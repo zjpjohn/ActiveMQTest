@@ -12,7 +12,7 @@
         <dependency>
             <groupId>com.qizhi.mq</groupId>
             <artifactId>activemq</artifactId>
-            <version>5.7.0-RELEASE</version>
+            <version>5.8.0-RELEASE</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>

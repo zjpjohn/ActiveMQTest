@@ -11,7 +11,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: com.qizhi.mq:activemq:5.7.0-RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.qizhi.mq:activemq:5.8.0-RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.activemq:activemq-all:5.13.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jms:3.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.2.2.RELEASE" level="project" />
@@ -34,6 +34,7 @@
     <orderEntry type="library" name="Maven: org.mybatis:mybatis-spring:1.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.8.4" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.8.4" level="project" />
+    <orderEntry type="library" name="Maven: com.lmax:disruptor:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:druid:1.0.20" level="project" />
     <orderEntry type="module-library">
       <library name="Maven: com.alibaba:jconsole:1.8.0">

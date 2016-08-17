@@ -3,6 +3,7 @@ package com.qizhi.mq.consumer;
 import com.qizhi.mq.entity.User;
 import com.qizhi.mq.service.UserService;
 import com.qizhi.mq.util.JsonMapper;
+import com.zjp.mq.consumer.AbstractReqRespConsumer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

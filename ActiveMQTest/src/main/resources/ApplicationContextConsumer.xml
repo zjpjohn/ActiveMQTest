@@ -78,7 +78,7 @@
 
     <context:component-scan base-package="com.qizhi.*"/>
 
-    <bean id="brokerConfig" class="com.qizhi.mq.config.BrokerConfig">
+    <bean id="brokerConfig" class="com.zjp.mq.config.BrokerConfig">
         <property name="brokerUrl" value="${broker_url}"/>
         <property name="userName" value="${user_name}"/>
         <property name="password" value="${password}"/>
@@ -90,7 +90,7 @@
         <property name="n2" value="true"/>
     </bean>
 
-    <bean id="messageProducer" class="com.qizhi.mq.producer.MessageSender">
+    <bean id="messageProducer" class="com.zjp.mq.producer.MessageSender">
         <property name="destName" value="${queue_name}"/>
         <property name="n2" value="true"/>
     </bean>

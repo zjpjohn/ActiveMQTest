@@ -1,12 +1,12 @@
 package com.qizhi.mq.service.impl;
 
 import com.google.common.collect.Maps;
-import com.qizhi.mq.annotation.AMQ;
 import com.qizhi.mq.entity.User;
-import com.qizhi.mq.producer.MessageSender;
 import com.qizhi.mq.service.UserBusinessService;
 import com.qizhi.mq.service.UserService;
 import com.qizhi.mq.util.JsonMapper;
+import com.zjp.mq.annotation.AMQ;
+import com.zjp.mq.producer.MessageSender;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
