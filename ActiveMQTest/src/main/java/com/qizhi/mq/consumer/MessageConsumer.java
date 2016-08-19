@@ -30,8 +30,7 @@ public class MessageConsumer extends AbstractReqRespConsumer {
         this.userService = userService;
     }
 
-    public void handleMessage(Object o) {
-        String message = (String) o;
+    public void handleMessage(String message) {
         User user = null;
         try {
             user = JsonMapper.toBean(message, User.class);
