@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qizhi.mq.mapper.UserMapper">
+    <resultMap id="UserResultMap" type="com.qizhi.mq.entity.User">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="sex" property="sex"/>
+        <result column="phone" property="phone"/>
+    </resultMap>
+
+    <select id="selectUserById" parameterType="java.lang.Integer" resultMap="UserResultMap">
+        SELECT id,name,age,sex,phone
+        FROM test_user
+        WHERE id = #{id}
+    </select>
+
+    <select id="selectUserByName" parameterType="java.lang.String" resultMap="UserResultMap">
+        SELECT id,name,age,sex,phone
+        FROM test_user
+        WHERE name=#{name}
+    </select>
+
+    <update id="updateUser" parameterType="com.qizhi.mq.entity.User">
+        UPDATE test_user SET
+        <if test="sex!=null and sex>=0">
+            sex=#{sex},
+        </if>
+        <if test="age!=null and age>0">
+            age=#{age},
+        </if>
+        <if test="phone!=null and phone!=''">
+            phone=#{phone}
+        </if>
+        WHERE id=#{id}
+    </update>
+
+    <insert id="addUser" parameterType="com.qizhi.mq.entity.User">
+        INSERT INTO test_user(name,age,sex,phone)
+        VALUES (#{name},#{age},#{sex},#{phone})
+    </insert>
+</mapper>
