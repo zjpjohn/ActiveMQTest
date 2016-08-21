@@ -64,10 +64,10 @@ public class UserBusinessServiceImpl implements UserBusinessService {
     public void sendUpdateMessage2(Integer id) {
         User user = new User();
         user.setName("axcsvd");
-        user.setAge(23);
+        user.setAge(id);
         user.setSex(0);
         user.setPhone("138xxxxxxxx");
-        userService.updateUser(user);
+        userService.addUser(user);
 //        String json = null;
 //        try {
 //            json = JsonMapper.toJson(user);
